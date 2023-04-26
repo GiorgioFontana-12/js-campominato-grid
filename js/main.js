@@ -1,8 +1,6 @@
 const griglia = document.getElementById("grid");
 const play = document.getElementById("startGame")
 const difficulty = document.getElementById("level")
-var difficultySelected = difficulty.options[difficulty.selectedIndex].value;
-console.log('You selected: ', difficultySelected);
 
 // Griglia 10x10 = 100 elementi
 
@@ -25,6 +23,9 @@ console.log('You selected: ', difficultySelected);
 }
 
 play.addEventListener("click", function() {
-    sqareGen("boxPiecesX100" , 100)
+    var difficultySelected = difficulty.options[difficulty.selectedIndex].value;
+    console.log('You selected: ', difficultySelected);
+
+    sqareGen(`boxPiecesX${difficultySelected}` , difficultySelected)
 })
 
