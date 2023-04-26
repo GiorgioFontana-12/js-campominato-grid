@@ -5,8 +5,9 @@ const difficulty = document.getElementById("level")
 // Griglia 10x10 = 100 elementi
 
  function sqareGen(gridPieces, totalPices) {
+    griglia.innerHTML = "";
     for (let i = 0; i < totalPices; i++) {
-    
+        
         const nuovoDiv = document.createElement("div");
 
         nuovoDiv.classList.add(gridPieces);
