@@ -20,16 +20,22 @@ header{
     align-items: center;
 }
 
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+
 .mainBox{
     margin: 0 auto;
     width: 1200px;
 }
-
+select,
 header button {
     font-size: 1.5rem;
     padding: 4px 12px;
 }
-
+h1,
+select,
 header button,
 header img,
 footer p {
@@ -48,17 +54,24 @@ main{
     border: 1px solid black;
     margin: 0 auto;
     align-content: flex-start;
+
 }
 
 .boxPiecesX100{
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: 1px solid black;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+.boxPiecesX100:hover{
+    cursor: pointer;
 }
 
-.flexWrap{
-    flex-wrap: wrap;
+.clicked {
+    background-color: blue;
 }
 
 

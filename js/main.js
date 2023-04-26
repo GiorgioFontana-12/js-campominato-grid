@@ -1,10 +1,13 @@
 const griglia = document.getElementById("grid");
 const play = document.getElementById("startGame")
+const difficulty = document.getElementById("level")
+var difficultySelected = difficulty.options[difficulty.selectedIndex].value;
+console.log('You selected: ', difficultySelected);
 
 // Griglia 10x10 = 100 elementi
 
- function sqareGen(gridPieces) {
-    for (let i = 0; i < 100; i++) {
+ function sqareGen(gridPieces, totalPices) {
+    for (let i = 0; i < totalPices; i++) {
     
         const nuovoDiv = document.createElement("div");
 
@@ -17,10 +20,11 @@ const play = document.getElementById("startGame")
         });
     
         griglia.appendChild(nuovoDiv);
+        nuovoDiv.innerHTML = i+1
     }
 }
 
 play.addEventListener("click", function() {
-    sqareGen("boxPiecesX100")
+    sqareGen("boxPiecesX100" , 100)
 })
 
