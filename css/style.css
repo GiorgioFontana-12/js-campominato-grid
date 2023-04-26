@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justifySpaceBetween {
+    justify-content: space-between;
+}
+
+.alignItemCenter{
+    align-items: center;
+}
+
+.mainBox{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header button {
+    font-size: 1.5rem;
+    padding: 4px 12px;
+}
+
+header button,
+header img,
+footer p {
+    margin: 1rem;
+}
+
+main{
+    height: calc(100vh - 120px);
+    background-color: aquamarine;
+    padding: 80px;
+}
+
+.secondBox{
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    align-content: flex-start;
+}
+
+.boxPiecesX100{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 1px solid black;
+
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 40px;
+}
