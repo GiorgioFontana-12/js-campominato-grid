@@ -86,7 +86,8 @@ main{
     justify-content: center;
     font-size: 2em;
 }
-
+.boxPiecesX49,
+.boxPiecesX81,
 .boxPiecesX100:hover{
     cursor: pointer;
 }
