@@ -18,7 +18,5 @@ const difficulty = document.getElementById("level")
 }
 play.addEventListener("click", function() {
     var difficultySelected = difficulty.options[difficulty.selectedIndex].value;
-    console.log('You selected: ', difficultySelected);
-
     sqareGen(`boxPiecesX${difficultySelected}` , difficultySelected)
 })
