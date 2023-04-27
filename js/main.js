@@ -7,7 +7,7 @@ const difficulty = document.getElementById("level")
     for (let i = 0; i < totalPices; i++) {
         const nuovoDiv = document.createElement("div");
 
-        nuovoDiv.classList.add(gridPieces);
+        nuovoDiv.classList.add("box", "flex", "alignItemCenter" , gridPieces);
         nuovoDiv.addEventListener("click", function() {
             console.log("this: ", this);
             this.classList.toggle("clicked");
@@ -18,5 +18,5 @@ const difficulty = document.getElementById("level")
 }
 play.addEventListener("click", function() {
     var difficultySelected = difficulty.options[difficulty.selectedIndex].value;
-    sqareGen(`boxPiecesX${difficultySelected}` , difficultySelected)
+    sqareGen(`PiecesX${difficultySelected}` , difficultySelected)
 })

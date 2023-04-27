@@ -57,38 +57,29 @@ main{
     align-content: flex-start;
 }
 
-.boxPiecesX49{
+.box {
+    border: 1px solid black;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+.PiecesX49{
     height: calc(100% / 7);
     width: calc(100% / 7);
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
 }
 
-.boxPiecesX81{
+.PiecesX81{
     height: calc(100% / 9);
     width: calc(100% / 9);
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
 }
 
-.boxPiecesX100{
+.PiecesX100{
     height: calc(100% / 10);
     width: calc(100% / 10);
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
 }
-.boxPiecesX49,
-.boxPiecesX81,
-.boxPiecesX100:hover{
+
+.box:hover{
     cursor: pointer;
 }
 
